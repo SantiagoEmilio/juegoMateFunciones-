@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego de Funciones Matemáticas</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container" id="contenido">
+    <h1>Identifica la funciónes</h1>
+    <p id="nivel">Nivel: 1</p>
+    <p id="puntaje">Puntaje: 0</p>
+    <canvas id="grafica" width="500" height="400"></canvas>
+    <div id="opciones">
+      <button data-tipo="lineal">Lineal</button>
+      <button data-tipo="cuadratica">Cuadrática</button>
+      <button data-tipo="cubica">Cúbica</button>
+      <button data-tipo="constante">Constante</button>
+      <button data-tipo="reciproca">Recíproca</button>
+    </div>
+    <p id="resultado"></p>
+  </div>
+
+  <div class="container" id="final" style="display:none;">
+    <h2>🎉 ¡Juego completado!</h2>
+    <p>Tu puntaje final fue: <strong id="puntajeFinal"></strong></p>
+    <button id="reiniciar">Reiniciar juego</button>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
